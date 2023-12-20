@@ -9,7 +9,6 @@ public class 고객VO {
 	private String 직업;
 	private int 적립금;
 	
-	
 	public String get고객아이디() {
 		return 고객아이디;
 	}
