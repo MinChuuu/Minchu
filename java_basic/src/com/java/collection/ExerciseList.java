@@ -13,7 +13,8 @@ public class ExerciseList {
 		list.add(3);
 		list.add(1);
 		list.add(2);
-		list.add(5);
+		//list.add(0,5); //0번지에 5 들어가고 나머지는 밀림
+		list.set(0,5); //0번지를 5로 대체 원래 0번지에 있던 데이터는 사라짐
 		list.add(6);
 		list.add(4);
 //		list.add('a');
@@ -26,7 +27,7 @@ public class ExerciseList {
 		
 		
 		//정렬
-		Collections.sort(list,Collections.reverseOrder());
+		//Collections.sort(list,Collections.reverseOrder());
 		
 		for(int i=0; i<list.size(); i++) {
 			System.out.println(i + "번지값: " + list.get(i));

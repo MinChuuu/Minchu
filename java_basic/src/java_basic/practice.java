@@ -34,6 +34,8 @@ public class practice {
 		
 		int sum = 0;
 		float avg = 0f;
+		char grade = 'F';
+		
 		
 		System.out.print("국어 점수를 입력하세요: ");
 		kor = scann.nextInt();
@@ -48,11 +50,21 @@ public class practice {
 		avg = (int)((sum/4f*100+5)/10)/10f; //78.30
 		//float avg = (kor + eng + math + sci)/4f;
 		
-		System.out.println("국어\t영어\t수학\t과학\t총점\t평균");
-		System.out.printf("%d\t%d\t%d\t%d\t%d\t%f\n", kor, eng, math, sci, sum, avg);
+//		if (avg < 60) {grade='F';}
+//		if (avg >= 60) {grade='D';}
+//		if (avg >= 70) {grade='C';}
+//		if (avg >= 80) {grade='B';}
+//		if (avg >= 90) {grade='A';}
+//		
+		if (avg >=90) {grade = 'A';}
+		else if (avg >=80) {grade ='B';}
+		else if (avg >=70) {grade ='C';}
+		else if (avg >=60) {grade ='D';}
+		else if (avg <60) {grade ='F';}
 		
-//		System.out.println("총점: " + sum);
-//		System.out.println("평균: " + avg);
+		
+		System.out.println("국어\t영어\t수학\t과학\t총점\t평균\t\t등급");
+		System.out.printf("%d\t%d\t%d\t%d\t%d\t%f\t%c\n", kor, eng, math, sci, sum, avg, grade);
 		
 	}
 

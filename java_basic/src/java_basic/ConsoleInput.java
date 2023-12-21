@@ -24,7 +24,7 @@ public class ConsoleInput {
 		
 		Scanner scann = new Scanner(System.in);
 		System.out.print("국어 점수를 입력하세요: ");
-		int inputInt = scan
+	
 
 	}
 
